@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ ! -e /tmp/openhab_ssh_mux_<%= node[:winkhub][:ip] %>_22_root ]; then
+  ssh winkhub -N -n &
+fi
+
+ssh winkhub "/usr/sbin/aprontest $@"

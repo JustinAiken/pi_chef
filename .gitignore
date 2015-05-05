@@ -1,0 +1,4 @@
+/tmp
+/cookbooks/
+.bundle/
+data_bags/openhab/*.json

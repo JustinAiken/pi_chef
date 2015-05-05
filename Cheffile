@@ -1,0 +1,12 @@
+site 'https://supermarket.getchef.com/api/v1'
+
+cookbook 'apt'
+cookbook 'git', '4.1' # Above doesn't work with raspbian right now.
+cookbook 'build-essential'
+cookbook 'justinaiken_dotfiles'
+cookbook 'ntp'
+cookbook 'openhab'
+cookbook 'rvm'
+cookbook 'ssh'
+
+cookbook 'my_pi', path: 'site-cookbooks/my_pi'
