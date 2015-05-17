@@ -8,6 +8,7 @@
 include_recipe 'apt'
 include_recipe 'ntp'
 include_recipe 'my_pi::raspbian_cleanup'
+include_recipe 'my_pi::network'
 include_recipe 'git::source'
 include_recipe 'rvm::system'
 include_recipe 'justinaiken_dotfiles'

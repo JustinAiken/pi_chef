@@ -1,0 +1,17 @@
+auto lo
+iface lo inet loopback
+
+auto eth0
+allow-hotplug eth0
+iface eth0 inet static
+address <%= node[:network][:wired_ip] %>
+netmask <%= node[:network][:wired_netmask] %>
+gateway <%= node[:network][:wired_gateway] %>
+
+<% if node[:network][:enable_wifi] %>
+auto wlan0
+allow-hotplug wlan0
+iface wlan0 inet dhcp
+  wpa-ssid "<%= node[:network][:wifi_user] %>"
+  wpa-psk "<%=  node[:network][:wifi_pass] %>"
+<% end %>
