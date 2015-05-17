@@ -29,7 +29,7 @@ This is the chef repo that runs my openHAB system on a [Raspberry Pi B+](https:/
 - `cd` into it
 - `bundle install`
 - Prepare configs
-  - Edit `pi.json`
+  - `cp nodes/pi.sample.json nodes/pi.json` and edit to taste
   - `cp data_bags/openhab/my_openhab.sample.json data_bags/openhab/my_openhab.json` and edit to taste
   - `cp data_bags/openhab/ssh_keys.sample.json data_bags/openhab/ssh_keys.json` and edit to taste
 - `rake prepare`

@@ -24,7 +24,14 @@
   "openhab_config": {
     "git_repository": "git@bitbucket.org:JustinAiken/openhab_configurations.git"
   },
+  "network": {
+    "wired_ip":      "up_to_you",
+    "wired_netmask": "255.255.255.0",
+    "wired_gateway": "up_to_you",
+    "wifi_user":     "Troy and Abed in the Modem",
+    "wifi_pass":     "not_telling"
+  },
   "winkhub": {
-    "ip": "192.168.1.44"
+    "ip": "up_to_you"
   }
 }
