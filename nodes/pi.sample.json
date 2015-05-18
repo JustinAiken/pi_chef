@@ -11,8 +11,10 @@
     "install_pkgs": ["sed", "grep", "tar", "gzip", "bzip2", "bash", "curl", "git-core"],
     "default_ruby": "2.2.1",
     "rubies":       ["2.2.1"],
-    "group_users":  ["pi"],
-    "global_gems":  [{"name": "bundler"}]
+    "global_gems":  [
+      {"name": "bundler"},
+      {"name": "rake"}
+    ]
   },
   "openhab": {
     "install_java":   false,
