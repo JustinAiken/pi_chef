@@ -26,6 +26,13 @@
   "openhab_config": {
     "git_repository": "git@bitbucket.org:JustinAiken/openhab_configurations.git"
   },
+  "garage": {
+    "username":  "up_to_you",
+    "password":  "up_to_you",
+    "door_id":   "up_to_you",
+    "base_url":  "up_to_you",
+    "item_name": "up_to_you"
+  },
   "network": {
     "wired_ip":      "up_to_you",
     "wired_netmask": "255.255.255.0",

@@ -1,0 +1,7 @@
+my_q:
+  user: <%= node[:garage][:username] %>
+  pass: <%= node[:garage][:password] %>
+  door_id: <%= node[:garage][:door_id] %>
+openhab:
+  base_url: <%= node[:garage][:base_url] %>
+  item_name:  <%= node[:garage][:item_name] %>
