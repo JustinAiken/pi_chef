@@ -29,6 +29,12 @@ end
 
 include_recipe 'my_pi::openhab_config'
 
+# Rereoute 80 -> 8080
+include_recipe 'iptables'
+iptables_rule 'http_8080' do
+  action :enable
+end
+
 template '/opt/openhab/scripts/wink.sh' do
   owner node[:openhab][:user]
   group node[:openhab][:group]

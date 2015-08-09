@@ -8,5 +8,6 @@ cookbook 'ntp'
 cookbook 'openhab'
 cookbook 'rvm'
 cookbook 'ssh'
+cookbook 'iptables'
 
 cookbook 'my_pi', path: 'site-cookbooks/my_pi'
