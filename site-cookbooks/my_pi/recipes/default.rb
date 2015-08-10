@@ -35,6 +35,12 @@ iptables_rule 'http_8080' do
   action :enable
 end
 
+directory '/opt/openhab/scripts' do
+  owner node[:openhab][:user]
+  group node[:openhab][:group]
+  action :create
+end
+
 template '/opt/openhab/scripts/wink.sh' do
   owner node[:openhab][:user]
   group node[:openhab][:group]
