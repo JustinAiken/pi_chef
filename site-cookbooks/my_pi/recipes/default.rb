@@ -17,6 +17,7 @@ include_recipe 'my_pi::user_openhab'
 include_recipe 'openhab'
 include_recipe 'openhab::init_script'
 include_recipe 'openhab::my_openhab'
+include_recipe 'openhab::habmin'
 include_recipe 'my_pi::myq_app'
 
 %w{secret uuid}.each do |myopenhab_file|

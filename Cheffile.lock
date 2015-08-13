@@ -23,7 +23,7 @@ SITE
     justinaiken_dotfiles (0.0.3)
       git (>= 0.0.0)
     ntp (1.8.2)
-    openhab (0.0.3)
+    openhab (0.0.4)
       apt (>= 0.0.0)
       ark (>= 0.0.0)
       java (>= 0.0.0)

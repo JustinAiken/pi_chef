@@ -21,7 +21,8 @@
     "install_method": "source",
     "user":           "openhab",
     "group":          "openhab",
-    "plugins":        ["action.xbmc", "binding.http", "binding.ntp", "binding.xbmc", "persistence.logging"]
+    "plugins":        ["action.xbmc", "binding.http", "binding.ntp", "binding.xbmc", "persistence.logging"],
+    "habmin":         {"user": "openhab", "group": "openhab"}
   },
   "openhab_config": {
     "git_repository": "git@bitbucket.org:JustinAiken/openhab_configurations.git"
